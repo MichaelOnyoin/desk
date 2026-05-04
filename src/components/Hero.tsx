@@ -56,7 +56,7 @@ export default function Hero() {
           >
             <Star size={14} className="text-[#E8C95A] fill-gold-400" />
             <span className="text-[#E8C95A] font-sans text-sm tracking-widest uppercase font-medium">
-              Award-Winning Trial Lawyers
+              Award-Winning Business Lawyers
             </span>
           </div>
 
@@ -65,10 +65,12 @@ export default function Hero() {
             className={`font-display font-bold text-white leading-none mb-6 transition-all duration-700 delay-150 ${
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
-            style={{ fontSize: "clamp(2.5rem, 7vw, 5.5rem)" }}
+            style={{ fontSize: "clamp(1.5rem, 4vw, 3.5rem)" }}
+            // 
           >
-            OUR FIGHT.{" "}
-            <span className="gold-text italic">YOUR VICTORY.</span>
+
+           We Help Entrepreneurs Register Companies {" "}
+            <span className="gold-text italic">with URSB & Stay Compliant in Uganda</span>
           </h1>
 
           {/* Divider */}

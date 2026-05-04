@@ -82,7 +82,7 @@ export default function MatthewSection() {
             <div className="grid sm:grid-cols-2 gap-3 mb-10">
               {highlights.map((h, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <CheckCircle2 size={16} className="text-gold-400 shrink-0" />
+                  <CheckCircle2 size={16} className="text-[#C9A84C] shrink-0" />
                   <span className="font-sans text-gray-300 text-sm">{h}</span>
                 </div>
               ))}
@@ -95,17 +95,17 @@ export default function MatthewSection() {
           {/* Photo placeholder */}
           <div className={`transition-all duration-700 delay-300 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"}`}>
             <div className="relative">
-              <div className="absolute -top-4 -left-4 w-full h-full border border-gold-500/30 rounded-2xl" />
+              <div className="absolute -top-4 -left-4 w-full h-full border border-[#E8C95A]/30 rounded-2xl" />
               <div className="relative bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl overflow-hidden aspect-[3/4] flex items-end justify-center">
                 {/* Decorative background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gold-900/20 to-transparent" />
-                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-400/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#9a7320]/20 to-transparent" />
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9A84C]/50 to-transparent" />
                 <div className="relative text-center p-8">
-                  <div className="w-24 h-24 rounded-full bg-gold-500/20 border border-gold-400/40 flex items-center justify-center mx-auto mb-4">
-                    <span className="font-display font-bold text-gold-300 text-3xl">MD</span>
+                  <div className="w-24 h-24 rounded-full bg-[#E8C95A]/20 border border-[#C9A84C]/40 flex items-center justify-center mx-auto mb-4">
+                    <span className="font-display font-bold text-[#E8C95A] text-3xl">MD</span>
                   </div>
                   <div className="font-display font-bold text-white text-xl mb-1">Matthew Dolman</div>
-                  <div className="text-gold-400 font-sans text-sm">Founding & Managing Partner</div>
+                  <div className="text-[#C9A84C] font-sans text-sm">Founding & Managing Partner</div>
                   <div className="text-gray-500 font-sans text-xs mt-2">Board Certified Trial Lawyer</div>
                 </div>
               </div>

@@ -1,23 +1,23 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Phone, Menu, X, ChevronDown, Search } from "lucide-react";
+import { Phone, Menu, X, ChevronDown, Search, PhoneCall } from "lucide-react";
 
 const navItems = [
   {
-    label: "Dangerous Drugs",
+    label: "Company Registration",
     children: [
-      "Depo Provera Lawsuit",
-      "Dupixent Lawsuit",
-      "Mounjaro Lawsuit",
-      "Ocaliva Lawsuit",
-      "Oxbryta Lawsuit",
-      "Ozempic Lawsuit",
-      "Suboxone Lawsuit",
-      "Tylenol Autism Lawsuit",
-      "Valsartan Cancer Lawsuit",
-      "Zantac Lawsuit",
-      "See All Lawsuits →",
+      "Name Search/Availability & Reservation ",
+      "Prepare Documents",
+      "Company Incorporation",
+      "Tax Registration (TIN)",
+      "Trading License",
+      "Employee Complaince",
+      // "Suboxone Lawsuit",
+      // "Tylenol Autism Lawsuit",
+      // "Valsartan Cancer Lawsuit",
+      // "Zantac Lawsuit",
+      "See All related services →",
     ],
   },
   {
@@ -96,7 +96,7 @@ export default function Navbar() {
       <nav
         className={`sticky top-0 z-50 nav-glass border-b transition-all duration-300 ${
           scrolled
-            ? "bg-white/45 border-gold-200 shadow-lg shadow-black/5"
+            ? "bg-white/85 border-gold-200 shadow-lg shadow-black/5"
             : "bg-white border-gold-100 "
         }`}
         // style={{
@@ -112,11 +112,11 @@ export default function Navbar() {
                 className="font-display font-bold text-xl text-black leading-none tracking-tight"
                 style={{ letterSpacing: "-0.02em" }}
               >
-                DOLMAN
+                Corporate
                 
               </span>
               <span className="text-xs font-sans font-medium tracking-[0.2em] text-gold-600 uppercase">
-                Law Group
+                Desk
               </span> */}
             </div>
             <div className="h-8 w-px bg-gold-300 mx-1" />
@@ -129,7 +129,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <div key={item.label} className="relative group">
-                <button className={`flex items-center gap-1 px-3 py-2 text-sm font-sans font-medium text-gray-800 hover:text-[#b8922a] transition-colors rounded ${scrolled?"text-white":""} `}>
+                <button className={`flex items-center gap-1 px-3 py-2 text-sm font-sans font-medium text-gray-800 hover:text-[#b8922a] transition-colors rounded ${scrolled?"text-black":""} `}>
                   {item.label}
                   {item.children.length > 0 && (
                     <ChevronDown
@@ -162,14 +162,14 @@ export default function Navbar() {
 
           {/* CTA + Search */}
           <div className="hidden lg:flex items-center gap-3">
-            <button className="text-gray-500 hover:text-gold-600 transition-colors p-2">
+            <button className="text-gray-500 hover:text-[#9a7320] transition-colors p-2">
               <Search size={18} />
             </button>
             <a
               href="#contact"
-              className="btn-gold text-black font-sans font-semibold text-sm px-5 py-2.5 rounded"
+              className="border border-gray-300 hover:bg-[#E8C95A] rounded-full text-black font-sans font-semibold text-sm px-5 py-2.5 rounded"
             >
-              Free Consultation
+              <PhoneCall className="h-4 w-4 hover:fill-white" role="button" />
             </a>
           </div>
 
@@ -200,7 +200,7 @@ export default function Navbar() {
                   {item.children.length > 0 && (
                     <ChevronDown
                       size={14}
-                      className={`text-gold-400 transition-transform ${
+                      className={`text-[#C9A84C] transition-transform ${
                         openMobileItem === item.label ? "rotate-180" : ""
                       }`}
                     />
@@ -227,7 +227,7 @@ export default function Navbar() {
                 href="#contact"
                 className="btn-gold block text-center text-black font-sans font-semibold text-sm px-5 py-3 rounded"
               >
-                Free Consultation
+                <PhoneCall className="h-4 w-4 inline-block mr-2" />
               </a>
             </div>
           </div>

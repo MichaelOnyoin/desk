@@ -16,8 +16,8 @@ const features = [
   },
   {
     icon: Users,
-    title: "National Medical Network",
-    desc: "We've cultivated a national network of doctors ready to give you care immediately, regardless of your ability to pay.",
+    title: "National Business Network",
+    desc: "We've cultivated a national network of business men ready to give you care immediately, regardless of your ability to pay.",
   },
   {
     icon: Award,

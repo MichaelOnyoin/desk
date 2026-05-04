@@ -106,7 +106,7 @@ export default function PracticeAreas() {
               <div className={`absolute inset-0 rounded-xl bg-gradient-to-b ${area.color} opacity-0 group-hover:opacity-100 transition-opacity`} />
               <div className="relative">
                 <div className="w-10 h-10 border border-gold-500/40 rounded-lg flex items-center justify-center mb-4 group-hover:border-gold-400 group-hover:bg-gold-500/10 transition-all">
-                  <area.icon size={18} className="text-gold-400" />
+                  <area.icon size={18} className="text-[#C9A84C]" />
                 </div>
                 <h3 className="font-display font-bold text-white text-base mb-4 leading-snug">
                   {area.category}
@@ -114,14 +114,14 @@ export default function PracticeAreas() {
                 <ul className="space-y-2">
                   {area.cases.map((c) => (
                     <li key={c}>
-                      <a href="#" className="text-gray-400 font-sans text-xs hover:text-gold-300 transition-colors flex items-center gap-1 group/link">
-                        <span className="w-1 h-1 rounded-full bg-gold-500/40 group-hover/link:bg-gold-400 transition-colors" />
+                      <a href="#" className="text-gray-400 font-sans text-xs hover:text-[#E8C95A] transition-colors flex items-center gap-1 group/link">
+                        <span className="w-1 h-1 rounded-full bg-[#9a7320]/40 group-hover/link:bg-[#E8C95A] transition-colors" />
                         {c}
                       </a>
                     </li>
                   ))}
                 </ul>
-                <a href="#" className="mt-4 text-gold-500 font-sans text-xs font-semibold tracking-wide hover:text-gold-300 transition-colors block">
+                <a href="#" className="mt-4 text-[#E8C95A] font-sans text-xs font-semibold tracking-wide hover:text-gold-300 transition-colors block">
                   See All →
                 </a>
               </div>
@@ -147,21 +147,21 @@ export default function PracticeAreas() {
             {recentCases.map((c, i) => (
               <article
                 key={i}
-                className={`card-hover bg-white border border-gray-100 rounded-xl p-6 group transition-all duration-500 ${
+                className={`card-hover bg-white border border-gray-100 rounded-none p-6 group transition-all duration-500 ${
                   visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                 }`}
                 style={{ transitionDelay: `${600 + i * 100}ms` }}
               >
-                <div className="text-gold-600 font-sans text-xs uppercase tracking-widest mb-3 font-semibold">
+                <div className="text-[#9a7320] font-sans text-xs uppercase tracking-widest mb-3 font-semibold">
                   {c.date}
                 </div>
-                <h3 className="font-display font-bold text-black text-lg leading-snug mb-3 group-hover:text-gold-700 transition-colors">
+                <h3 className="font-display font-bold text-black text-lg leading-snug mb-3 group-hover:text-black transition-colors">
                   {c.title}
                 </h3>
                 <p className="font-body text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
                   {c.excerpt}
                 </p>
-                <a href="#" className="text-gold-600 font-sans text-xs font-semibold tracking-wide hover:text-gold-500 flex items-center gap-1 transition-colors">
+                <a href="#" className="text-black font-sans text-xs font-semibold tracking-wide hover:text-[#E8C95A] flex items-center gap-1 transition-colors">
                   READ MORE <ArrowRight size={12} />
                 </a>
               </article>
