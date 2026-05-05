@@ -26,7 +26,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-black">
+    <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-white">
       {/* Background image layer */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

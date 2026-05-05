@@ -79,13 +79,13 @@ export default function Navbar() {
   return (
     <>
       {/* Top bar */}
-      <div className="bg-black text-white text-sm py-2 px-4 flex justify-between items-center">
-        <span className="text-gold-500 font-sans tracking-wide text-xs">
+      <div className="bg-white text-black text-sm py-2 px-4 flex justify-between items-center">
+        <span className="font-sans tracking-wide text-xs">
           FREE CASE EVALUATION — AVAILABLE 24/7
         </span>
         <a
           href="tel:8335527274"
-          className="flex items-center gap-2 text-gold-400 hover:text-gold-300 transition-colors font-sans font-semibold"
+          className="flex items-center gap-2 hover:text-gold-300 transition-colors font-sans font-semibold"
         >
           <Phone size={14} />
           833-552-7274
@@ -96,8 +96,8 @@ export default function Navbar() {
       <nav
         className={`sticky top-0 z-50 nav-glass border-b transition-all duration-300 ${
           scrolled
-            ? "bg-white/85 border-gold-200 shadow-lg shadow-black/5"
-            : "bg-white border-gold-100 "
+            ? "bg-black/85 border-gold-200 shadow-lg shadow-white/5"
+            : "bg-black border-gold-100 "
         }`}
         // style={{
         //   backgroundImage: `url('navbar-header.jpg')`,
@@ -120,7 +120,7 @@ export default function Navbar() {
               </span> */}
             </div>
             <div className="h-8 w-px bg-gold-300 mx-1" />
-            <span className="text-[10px] font-sans text-gray-500 max-w-[100px] leading-tight">
+            <span className="text-[10px] font-sans text-white max-w-[100px] leading-tight">
               Trusted registration and documentation services
             </span>
           </a>
@@ -129,7 +129,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <div key={item.label} className="relative group">
-                <button className={`flex items-center gap-1 px-3 py-2 text-sm font-sans font-medium text-gray-800 hover:text-[#b8922a] transition-colors rounded ${scrolled?"text-black":""} `}>
+                <button className={`flex items-center gap-1 px-3 py-2 text-sm font-sans font-medium text-white hover:text-[#b8922a] transition-colors rounded ${scrolled?"text-black":""} `}>
                   {item.label}
                   {item.children.length > 0 && (
                     <ChevronDown
@@ -162,12 +162,12 @@ export default function Navbar() {
 
           {/* CTA + Search */}
           <div className="hidden lg:flex items-center gap-3">
-            <button className="text-gray-500 hover:text-[#9a7320] transition-colors p-2">
+            <button className="text-white hover:text-[#9a7320] transition-colors p-2">
               <Search size={18} />
             </button>
             <a
               href="#contact"
-              className="border border-gray-300 hover:bg-[#E8C95A] rounded-full text-black font-sans font-semibold text-sm px-5 py-2.5 rounded"
+              className="border border-white hover:bg-[#E8C95A] rounded-full text-white font-sans font-semibold text-sm px-5 py-2.5 rounded"
             >
               <PhoneCall className="h-4 w-4 hover:fill-white" role="button" />
             </a>
@@ -175,7 +175,7 @@ export default function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden text-black p-2"
+            className="lg:hidden text-white p-2"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
