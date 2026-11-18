@@ -14,7 +14,7 @@ const stats = [
   { value: "120+", label: "Years Experience" },
 ];
 
-const mediaLogos = ["CNN", "ABC", "NBC", "FOX", "USA Today", "Forbes", "Reuters"];
+const mediaLogos = ["KCCA", "URSB", "URA", "NSSF", "UG Today"];
 
 export default function Hero() {
   const [visible, setVisible] = useState(false);
@@ -56,7 +56,7 @@ export default function Hero() {
           >
             <Star size={14} className="text-[#E8C95A] fill-gold-400" />
             <span className="text-[#E8C95A] font-sans text-sm tracking-widest uppercase font-medium">
-              Award-Winning Business Lawyers
+              Lawyer-led business registration
             </span>
           </div>
 
@@ -162,7 +162,7 @@ export default function Hero() {
           }`}
         >
           <p className="text-white font-sans text-xs uppercase tracking-[0.25em] mb-4">
-            Featured In
+            We handle your registrations with
           </p>
           <div className="flex flex-wrap gap-6 items-center">
             {mediaLogos.map((logo) => (

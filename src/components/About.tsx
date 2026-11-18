@@ -6,22 +6,22 @@ import { Shield, Scale, Users, Award } from "lucide-react";
 const features = [
   {
     icon: Scale,
-    title: "One-on-One Case Review",
+    title: "Consult",
     desc: "We meet with you personally to discuss your case for free, regardless of your accident type or injury.",
   },
   {
     icon: Shield,
-    title: "Aggressive Representation",
+    title: "Prepare",
     desc: "Our dedicated team acts quickly to identify all potential sources of compensation and aggressively pursues maximum recovery.",
   },
   {
     icon: Users,
-    title: "National Business Network",
+    title: "File",
     desc: "We've cultivated a national network of business men ready to give you care immediately, regardless of your ability to pay.",
   },
   {
     icon: Award,
-    title: "No Fee Until You Win",
+    title: "Stay Complaint",
     desc: "Throughout your injury claim, you owe us nothing until we recover compensation for you. Zero financial risk.",
   },
 ];
@@ -57,8 +57,8 @@ export default function About() {
             Why Choose Us
           </p>
           <h2 className="font-display font-bold text-black text-4xl lg:text-5xl leading-tight mb-6">
-            Award-Winning Personal Injury &{" "}
-            <span className="gold-text">Mass Tort Lawyers</span>
+            We Simplify the entire {" "}
+            <span className="gold-text">Process</span>
           </h2>
           <div className="gold-line mx-auto" />
           <p className="text-gray-600 font-body text-lg leading-relaxed mt-6">
